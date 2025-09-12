@@ -15,28 +15,7 @@
 
 ## About The Project
 
-The aim of this app provide a backend that calls the [EU Data Act API of Bosch eBike Systems](https://flow.bosch-ebike.com/data-act).
-
-### Built With
-
-tbd
-
-## Installation
-
-tbd
-
-## Usage
-
-tbd
-
-## Roadmap
-
-See the [open issues](https://github.com/open-ebike/open-ebike-backend/issues) for a list of proposed features (and
- known issues).
-
-## Contact
-
-Florian Schwanz - florian.schwanz@gmail.com
+The aim of this project is to retrieve data via the [EU Data Act API of Bosch eBike Systems](https://flow.bosch-ebike.com/data-act).
 
 ## Acknowledgements
 
