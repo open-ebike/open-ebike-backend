@@ -4,3 +4,4 @@
 *.DS_Store
 
 /bruno/bosch-ebike-systems/.env
+/http/http-client.private.env.json

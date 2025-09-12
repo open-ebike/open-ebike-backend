@@ -1,0 +1,11 @@
+###
+// List all activity summaries
+GET https://api.bosch-ebike.com/activity/smart-system/v1/activities
+Authorization: Bearer {{$auth.token("euda-test-confidential")}}
+Content-Type: application/json
+
+###
+// Retrieve details of a single activity
+GET https://api.bosch-ebike.com/activity/smart-system/v1/activities/{activityId}/details
+Authorization: Bearer {{$auth.token("euda-test-confidential")}}
+Content-Type: application/json

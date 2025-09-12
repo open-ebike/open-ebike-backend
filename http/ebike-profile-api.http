@@ -1,0 +1,11 @@
+###
+// List all eBikes
+GET https://api.bosch-ebike.com/bike-profile/smart-system/v1/bikes
+Authorization: Bearer {{$auth.token("euda-test-confidential")}}
+Content-Type: application/json
+
+###
+// Retrieve a single eBike
+GET https://api.bosch-ebike.com/bike-profile/smart-system/v1/bikes/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
+Authorization: Bearer {{$auth.token("euda-test-confidential")}}
+Content-Type: application/json

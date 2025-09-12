@@ -1,0 +1,5 @@
+###
+// Get installation reports of a bulk configuration change for a Smart System bike
+GET https://api.bosch-ebike.com/bulk-configuration/smart-system/v1/installation-reports?bikeId=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
+Authorization: Bearer {{$auth.token("euda-test-confidential")}}
+Content-Type: application/json

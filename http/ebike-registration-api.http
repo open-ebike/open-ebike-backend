@@ -1,0 +1,5 @@
+###
+// List all bike and component registrations
+GET https://api.bosch-ebike.com/bike-registration/smart-system/v1/registrations
+Authorization: Bearer {{$auth.token("euda-test-confidential")}}
+Content-Type: application/json

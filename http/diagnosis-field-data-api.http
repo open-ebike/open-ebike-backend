@@ -1,0 +1,5 @@
+###
+// Get all available battery measurement field data collected by Bosch Capacity Tester (Smart System).
+GET https://api.bosch-ebike.com/diagnosis-field-data/smart-system/v1/capacity-testers?partNumber=1234567890&serialNumber=12345-1234-12-123-12-1234
+Authorization: Bearer {{$auth.token("euda-test-confidential")}}
+Content-Type: application/json
