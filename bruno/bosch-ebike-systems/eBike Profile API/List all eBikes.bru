@@ -1,0 +1,15 @@
+meta {
+  name: List all eBikes
+  type: http
+  seq: 1
+}
+
+get {
+  url: https://api.bosch-ebike.com/bike-profile/smart-system/v1/bikes
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

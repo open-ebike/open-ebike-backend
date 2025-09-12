@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "bosch-ebike-systems",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}

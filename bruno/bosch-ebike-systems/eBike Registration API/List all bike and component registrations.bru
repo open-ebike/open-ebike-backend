@@ -1,0 +1,15 @@
+meta {
+  name: List all bike and component registrations
+  type: http
+  seq: 1
+}
+
+get {
+  url: https://api.bosch-ebike.com/bike-registration/smart-system/v1/registrations
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

@@ -1,0 +1,23 @@
+meta {
+  name: Gets all available remote configuration cases for a Smart System bike
+  type: http
+  seq: 1
+}
+
+get {
+  url: https://api.bosch-ebike.com/remote-configuration/smart-system/v1/cases?bikeId={{bikeId}}
+  body: none
+  auth: inherit
+}
+
+params:query {
+  bikeId: {{bikeId}}
+}
+
+vars:pre-request {
+  bikeId: c0d273ef-6d3e-4f8f-9f4b-c99255c84788
+}
+
+settings {
+  encodeUrl: true
+}

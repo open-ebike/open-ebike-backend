@@ -1,0 +1,23 @@
+meta {
+  name: Get installation reports of a bulk configuration change for a Smart System bike
+  type: http
+  seq: 1
+}
+
+get {
+  url: https://api.bosch-ebike.com/bulk-configuration/smart-system/v1/installation-reports?bikeId={{bikeId}}
+  body: none
+  auth: inherit
+}
+
+params:query {
+  bikeId: {{bikeId}}
+}
+
+vars:pre-request {
+  bikeId: c0d273ef-6d3e-4f8f-9f4b-c99255c84788
+}
+
+settings {
+  encodeUrl: true
+}

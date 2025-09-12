@@ -1,0 +1,25 @@
+meta {
+  name: Get all available battery measurement field data collected by Bosch Capacity Tester (Smart System).
+  type: http
+  seq: 1
+}
+
+get {
+  url: https://api.bosch-ebike.com/diagnosis-field-data/smart-system/v1/capacity-testers?partNumber={{serialNumber}}&serialNumber={{partNumber}}
+  body: none
+  auth: inherit
+}
+
+params:query {
+  partNumber: {{serialNumber}}
+  serialNumber: {{partNumber}}
+}
+
+vars:pre-request {
+  serialNumber: EB1110000V
+  partNumber: 43707-0539-31-300-00-0000
+}
+
+settings {
+  encodeUrl: true
+}

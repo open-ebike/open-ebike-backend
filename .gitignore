@@ -2,3 +2,5 @@
 /.idea
 
 *.DS_Store
+
+/bruno/bosch-ebike-systems/.env

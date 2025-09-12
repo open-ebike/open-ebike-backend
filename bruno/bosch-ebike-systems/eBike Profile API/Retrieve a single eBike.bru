@@ -1,0 +1,23 @@
+meta {
+  name: Retrieve a single eBike
+  type: http
+  seq: 2
+}
+
+get {
+  url: https://api.bosch-ebike.com/bike-profile/smart-system/v1/bikes/:bikeId
+  body: none
+  auth: inherit
+}
+
+params:path {
+  bikeId: {{bikeId}}
+}
+
+vars:pre-request {
+  bikeId: c0d273ef-6d3e-4f8f-9f4b-c99255c84788
+}
+
+settings {
+  encodeUrl: true
+}

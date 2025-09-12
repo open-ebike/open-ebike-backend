@@ -1,0 +1,21 @@
+meta {
+  name: List all activity summaries
+  type: http
+  seq: 1
+}
+
+get {
+  url: https://api.bosch-ebike.com/activity/smart-system/v1/activities?limit=20&offset=0&sort=startTime
+  body: none
+  auth: inherit
+}
+
+params:query {
+  limit: 20
+  offset: 0
+  sort: startTime
+}
+
+settings {
+  encodeUrl: true
+}
