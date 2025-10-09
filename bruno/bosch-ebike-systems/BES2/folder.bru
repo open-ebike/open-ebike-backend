@@ -4,5 +4,28 @@ meta {
 }
 
 auth {
-  mode: inherit
+  mode: oauth2
+}
+
+auth:oauth2 {
+  grant_type: authorization_code
+  callback_url: http://localhost:4200
+  authorization_url: https://p9.authz.bosch.com/auth/realms/obc/protocol/openid-connect/auth
+  access_token_url: https://p9.authz.bosch.com/auth/realms/obc/protocol/openid-connect/token
+  refresh_token_url: 
+  client_id: {{process.env.euda-test-confidential-client-id}}
+  client_secret: {{process.env.euda-test-confidential-client-secret}}
+  scope: 
+  state: 
+  pkce: false
+  credentials_placement: body
+  credentials_id: credentials
+  token_placement: header
+  token_header_prefix: Bearer
+  auto_fetch_token: true
+  auto_refresh_token: false
+}
+
+auth:oauth2:additional_params:auth_req:queryparams {
+  kc_idp_hint: ebike-connect
 }
