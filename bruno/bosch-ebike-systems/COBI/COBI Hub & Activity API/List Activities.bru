@@ -1,0 +1,15 @@
+meta {
+  name: List Activities
+  type: http
+  seq: 2
+}
+
+get {
+  url: https://api.bosch-ebike.com/cobi/v1/activities
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}
