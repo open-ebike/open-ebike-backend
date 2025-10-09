@@ -1,5 +1,7 @@
+@bikeId=00000000-0000-0000-0000-000000000000
+
 ###
 // Gets all available remote configuration cases for a Smart System bike
-GET https://api.bosch-ebike.com/remote-configuration/smart-system/v1/cases?bikeId=550e8400-e29b-41d4-a716-446655440000
+GET https://api.bosch-ebike.com/remote-configuration/smart-system/v1/cases?bikeId={{bikeId}}
 Authorization: Bearer {{$auth.token("euda-test-confidential")}}
 Content-Type: application/json

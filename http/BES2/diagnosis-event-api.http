@@ -1,0 +1,20 @@
+@partNumber = 12345678914
+@serialNumber = 1707261/0447
+
+###
+// Get the tuning reset events of eBike System 2 drive units
+GET https://api.bosch-ebike.com/diagnosis-event/ebike-system-2/v1/tuning-resets?partNumber={{partNumber}}&serialNumber={{serialNumber}}
+Authorization: Bearer {{$auth.token("euda-test-confidential")}}
+Content-Type: application/json
+
+###
+// Get the battery deactivation events of eBike System 2 batteries
+GET https://api.bosch-ebike.com/diagnosis-event/ebike-system-2/v1/battery-deactivations?partNumber={{partNumber}}&serialNumber={{serialNumber}}Authorization: Bearer {{$auth.token("euda-test-confidential")}}
+Authorization: Bearer {{$auth.token("euda-test-confidential")}}
+Content-Type: application/json
+
+###
+// Get the lock reset events of eBike System 2 drive units
+GET https://api.bosch-ebike.com/diagnosis-event/ebike-system-2/v1/lock-resets?partNumber={{partNumber}}&serialNumber={{serialNumber}}Authorization: Bearer {{$auth.token("euda-test-confidential")}}
+Authorization: Bearer {{$auth.token("euda-test-confidential")}}
+Content-Type: application/json

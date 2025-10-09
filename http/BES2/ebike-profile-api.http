@@ -1,0 +1,8 @@
+@partNumber = 12345678914
+@serialNumber = 1707261/0447
+
+###
+// Retrieve details for bikes
+GET https://api.bosch-ebike.com/bike-profile/ebike-system-2/v1/bikes?partNumber={{partNumber}}&serialNumber={{serialNumber}}
+Authorization: Bearer {{$auth.token("euda-test-confidential")}}
+Content-Type: application/json

@@ -1,0 +1,8 @@
+@partNumber = 12345678914
+@serialNumber = 1707261/0447
+
+###
+// Gets all available remote configuration cases for an eBike System 2 bike
+GET https://api.bosch-ebike.com/remote-configuration/ebike-system-2/v1/cases?partNumber={{partNumber}}&serialNumber={{serialNumber}}
+Authorization: Bearer {{$auth.token("euda-test-confidential")}}
+Content-Type: application/json

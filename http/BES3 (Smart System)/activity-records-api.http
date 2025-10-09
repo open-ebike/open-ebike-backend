@@ -1,3 +1,5 @@
+@activityId = "00000000-0000-0000-0000-000000000000"
+
 ###
 // List all activity summaries
 GET https://api.bosch-ebike.com/activity/smart-system/v1/activities
@@ -6,6 +8,6 @@ Content-Type: application/json
 
 ###
 // Retrieve details of a single activity
-GET https://api.bosch-ebike.com/activity/smart-system/v1/activities/{activityId}/details
+GET https://api.bosch-ebike.com/activity/smart-system/v1/activities/{{activityId}}/details
 Authorization: Bearer {{$auth.token("euda-test-confidential")}}
 Content-Type: application/json

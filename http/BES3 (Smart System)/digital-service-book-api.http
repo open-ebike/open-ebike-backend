@@ -1,5 +1,7 @@
+@bikeId=00000000-0000-0000-0000-000000000000
+
 ###
 // Get the service records of a Smart System bike.
-GET https://api.bosch-ebike.com/service-book/smart-system/v1/service-records?bikeId=550e8400-e29b-41d4-a716-446655440000
+GET https://api.bosch-ebike.com/service-book/smart-system/v1/service-records?bikeId={{bikeId}}
 Authorization: Bearer {{$auth.token("euda-test-confidential")}}
 Content-Type: application/json

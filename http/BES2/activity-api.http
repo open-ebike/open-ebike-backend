@@ -1,0 +1,25 @@
+@activityId=00000000-0000-0000-0000-000000000000
+
+###
+// List all activity summaries
+GET https://api.bosch-ebike.com/activity/ebike-system-2/v1/activities?limit=20&offset=0
+Authorization: Bearer {{$auth.token("euda-test-confidential")}}
+Content-Type: application/json
+
+###
+// Retrieve details of a single activity
+GET https://api.bosch-ebike.com/activity/ebike-system-2/v1/activities/{{activityId}}
+Authorization: Bearer {{$auth.token("euda-test-confidential")}}
+Content-Type: application/json
+
+###
+// Export activity in .fit, .csv, .tcx or .gpx format
+GET https://api.bosch-ebike.com/activity/ebike-system-2/v1/activities/{{activityId}}/export
+Authorization: Bearer {{$auth.token("euda-test-confidential")}}
+Content-Type: application/json
+
+###
+// List statistics
+GET https://api.bosch-ebike.com/activity/ebike-system-2/v1/statistics
+Authorization: Bearer {{$auth.token("euda-test-confidential")}}
+Content-Type: application/json

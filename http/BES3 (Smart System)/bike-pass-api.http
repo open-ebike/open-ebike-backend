@@ -1,5 +1,7 @@
+@bikeId=00000000-0000-0000-0000-000000000000
+
 ###
 // Get bike passes for a Smart System bike
-GET https://api.bosch-ebike.com/bike-pass/smart-system/v1/bike-passes?bikeId=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
+GET https://api.bosch-ebike.com/bike-pass/smart-system/v1/bike-passes?bikeId={{bikeId}}
 Authorization: Bearer {{$auth.token("euda-test-confidential")}}
 Content-Type: application/json

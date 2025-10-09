@@ -1,0 +1,20 @@
+@partNumber = 12345678914
+@serialNumber = 1707261/0447
+
+###
+// Get all available battery measurement field data collected by Bosch Capacity Tester (eBike System 2)
+GET https://api.bosch-ebike.com/diagnosis-field-data/ebike-system-2/v1/capacity-testers?partNumber={{partNumber}}&serialNumber={{serialNumber}}
+Authorization: Bearer {{$auth.token("euda-test-confidential")}}
+Content-Type: application/json
+
+###
+// Get all available battery field data collected by the battery (eBike System 2)
+GET https://api.bosch-ebike.com/diagnosis-field-data/ebike-system-2/v1/batteries?partNumber={{partNumber}}&serialNumber={{serialNumber}}
+Authorization: Bearer {{$auth.token("euda-test-confidential")}}
+Content-Type: application/json
+
+###
+// Get all available drive unit field data (eBike System 2)
+GET https://api.bosch-ebike.com/diagnosis-field-data/ebike-system-2/v1/drive-units?partNumber={{partNumber}}&serialNumber={{serialNumber}}
+Authorization: Bearer {{$auth.token("euda-test-confidential")}}
+Content-Type: application/json

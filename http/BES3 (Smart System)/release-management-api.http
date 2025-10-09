@@ -1,0 +1,7 @@
+@bikeId=00000000-0000-0000-0000-000000000000
+
+###
+// Get installation reports of a specified bike.
+GET https://api.bosch-ebike.com/software-update/smart-system/v1/installation-reports?createdAfter=2020-01-01T00:00:00.000Z&createdBefore=2026-01-01T00:00:00.000Z&limit=5&offset=0&bikeId={{bikeId}}
+Authorization: Bearer {{$auth.token("euda-test-confidential")}}
+Content-Type: application/json
