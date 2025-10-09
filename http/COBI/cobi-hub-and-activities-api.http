@@ -1,0 +1,11 @@
+###
+// List hubs
+GET https://api.bosch-ebike.com/cobi/v1/hubs
+Authorization: Bearer {{$auth.token("euda-test-confidential")}}
+Content-Type: application/json
+
+###
+// List activities
+GET https://api.bosch-ebike.com/cobi/v1/activities
+Authorization: Bearer {{$auth.token("euda-test-confidential")}}
+Content-Type: application/json
