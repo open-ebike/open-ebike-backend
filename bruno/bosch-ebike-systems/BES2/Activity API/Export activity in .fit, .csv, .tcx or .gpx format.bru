@@ -1,0 +1,23 @@
+meta {
+  name: Export activity in .fit, .csv, .tcx or .gpx format
+  type: http
+  seq: 3
+}
+
+get {
+  url: https://api.bosch-ebike.com/activity/ebike-system-2/v1/activities/:activityId/export
+  body: none
+  auth: inherit
+}
+
+params:path {
+  activityId: {{activityId}}
+}
+
+vars:pre-request {
+  activityId: 00000000-0000-0000-0000-000000000000
+}
+
+settings {
+  encodeUrl: true
+}

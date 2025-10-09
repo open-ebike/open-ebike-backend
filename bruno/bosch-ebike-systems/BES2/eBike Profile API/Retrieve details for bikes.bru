@@ -1,0 +1,25 @@
+meta {
+  name: Retrieve details for bikes
+  type: http
+  seq: 3
+}
+
+get {
+  url: https://api.bosch-ebike.com/bike-profile/ebike-system-2/v1/bikes?partNumber={{serialNumber}}&serialNumber={{partNumber}}
+  body: none
+  auth: inherit
+}
+
+params:query {
+  partNumber: {{serialNumber}}
+  serialNumber: {{partNumber}}
+}
+
+vars:pre-request {
+  partNumber: 43707-0539-31-300-00-0000
+  serialNumber: EB1110000V
+}
+
+settings {
+  encodeUrl: true
+}

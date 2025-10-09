@@ -1,0 +1,25 @@
+meta {
+  name: Get the battery deactivation events of eBike System 2 batteries
+  type: http
+  seq: 2
+}
+
+get {
+  url: https://api.bosch-ebike.com/diagnosis-event/ebike-system-2/v1/battery-deactivations?partNumber={{partNumber}}&serialNumber={{serialNumber}}
+  body: none
+  auth: inherit
+}
+
+params:query {
+  partNumber: {{partNumber}}
+  serialNumber: {{serialNumber}}
+}
+
+vars:pre-request {
+  partNumber: 12345678914
+  serialNumber: 1707261/0447
+}
+
+settings {
+  encodeUrl: true
+}

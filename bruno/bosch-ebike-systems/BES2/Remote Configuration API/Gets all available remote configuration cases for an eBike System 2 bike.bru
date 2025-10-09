@@ -1,0 +1,25 @@
+meta {
+  name: Gets all available remote configuration cases for an eBike System 2 bike
+  type: http
+  seq: 4
+}
+
+get {
+  url: https://api.bosch-ebike.com/remote-configuration/ebike-system-2/v1/cases?partNumber={{partNumber}}&serialNumber={{serialNumber}}
+  body: none
+  auth: inherit
+}
+
+params:query {
+  partNumber: {{partNumber}}
+  serialNumber: {{serialNumber}}
+}
+
+vars:pre-request {
+  partNumber: 12345678914
+  serialNumber: 1707261/0447
+}
+
+settings {
+  encodeUrl: true
+}

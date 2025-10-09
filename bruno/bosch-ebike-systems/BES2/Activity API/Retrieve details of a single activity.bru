@@ -1,0 +1,15 @@
+meta {
+  name: Retrieve details of a single activity
+  type: http
+  seq: 2
+}
+
+get {
+  url: https://api.bosch-ebike.com/activity/ebike-system-2/v1/activities/{{activityId}}
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

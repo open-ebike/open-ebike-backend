@@ -1,0 +1,25 @@
+meta {
+  name: Get all available battery measurement field data collected by Bosch Capacity Tester (eBike System 2)
+  type: http
+  seq: 1
+}
+
+get {
+  url: https://api.bosch-ebike.com/diagnosis-field-data/ebike-system-2/v1/capacity-testers?partNumber={{partNumber}}&serialNumber={{serialNumber}}
+  body: none
+  auth: inherit
+}
+
+params:query {
+  partNumber: {{partNumber}}
+  serialNumber: {{serialNumber}}
+}
+
+vars:pre-request {
+  partNumber: 12345678914
+  serialNumber: 1707261/0447
+}
+
+settings {
+  encodeUrl: true
+}
