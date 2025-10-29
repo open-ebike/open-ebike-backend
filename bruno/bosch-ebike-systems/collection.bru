@@ -4,12 +4,12 @@ auth {
 
 auth:oauth2 {
   grant_type: authorization_code
-  callback_url: http://localhost:4200
+  callback_url: {{process.env.euda-callback-url}}
   authorization_url: https://p9.authz.bosch.com/auth/realms/obc/protocol/openid-connect/auth
   access_token_url: https://p9.authz.bosch.com/auth/realms/obc/protocol/openid-connect/token
   refresh_token_url: 
-  client_id: {{process.env.euda-test-confidential-client-id}}
-  client_secret: {{process.env.euda-test-confidential-client-secret}}
+  client_id: {{process.env.euda-client-id}}
+  client_secret: {{process.env.euda-client-secret}}
   scope: 
   state: 
   pkce: false
